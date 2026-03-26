@@ -390,8 +390,8 @@
     "title": "Harry Potter and the Deathly Hallows (Stephen Fry)",
     "authors": "J.K. Rowling",
     "coverUrl": "https://m.media-amazon.com/images/I/51Q85tQXLoL._SL500_.jpg",
-    "status": "in_progress",
-    "minutesLeft": 863,
+    "status": "finished",
+    "minutesLeft": null,
     "series": "Harry Potter",
     "genre": "Fantasy"
   },
@@ -408,8 +408,8 @@
     "title": "Harry Potter and the Order of the Phoenix (Stephen Fry)",
     "authors": "J.K. Rowling",
     "coverUrl": "https://m.media-amazon.com/images/I/51NjsvMWAyL._SL500_.jpg",
-    "status": "in_progress",
-    "minutesLeft": 17,
+    "status": "finished",
+    "minutesLeft": null,
     "series": "Harry Potter",
     "genre": "Fantasy"
   },
@@ -417,8 +417,8 @@
     "title": "Harry Potter and the Goblet of Fire (Stephen Fry)",
     "authors": "J.K. Rowling",
     "coverUrl": "https://m.media-amazon.com/images/I/51IyMF2d13L._SL500_.jpg",
-    "status": "in_progress",
-    "minutesLeft": 12,
+    "status": "finished",
+    "minutesLeft": null,
     "series": "Harry Potter",
     "genre": "Fantasy"
   },
@@ -495,15 +495,6 @@
     "genre": "Economics"
   },
   {
-    "title": "The Stranger I Married",
-    "authors": "Sylvia Day",
-    "coverUrl": "https://m.media-amazon.com/images/I/41gU75atVFL._SL500_.jpg",
-    "status": "finished",
-    "minutesLeft": null,
-    "series": "",
-    "genre": "Romance"
-  },
-  {
     "title": "At Home: A Short History of Private Life",
     "authors": "Bill Bryson",
     "coverUrl": "https://m.media-amazon.com/images/I/41H5Lvsgr9L._SL500_.jpg",
@@ -534,8 +525,8 @@
     "title": "The Secret (Jack Reacher)",
     "authors": "Lee Child, Andrew Child",
     "coverUrl": "https://m.media-amazon.com/images/I/51B+4t34+OL._SL500_.jpg",
-    "status": "in_progress",
-    "minutesLeft": 144,
+    "status": "finished",
+    "minutesLeft": null,
     "series": "Jack Reacher",
     "genre": "Thriller"
   },
@@ -657,15 +648,6 @@
     "genre": "Science"
   },
   {
-    "title": "Seven Years to Sin",
-    "authors": "Sylvia Day",
-    "coverUrl": "https://m.media-amazon.com/images/I/51DN0yGsUAL._SL500_.jpg",
-    "status": "finished",
-    "minutesLeft": null,
-    "series": "",
-    "genre": "Romance"
-  },
-  {
     "title": "The McKinsey Way",
     "authors": "Ethan M. Rasiel",
     "coverUrl": "https://m.media-amazon.com/images/I/51ru8NubhIL._SL500_.jpg",
@@ -687,8 +669,8 @@
     "title": "No Plan B",
     "authors": "Lee Child, Andrew Child",
     "coverUrl": "https://m.media-amazon.com/images/I/515XImy-v2L._SL500_.jpg",
-    "status": "in_progress",
-    "minutesLeft": 616,
+    "status": "finished",
+    "minutesLeft": null,
     "series": "Jack Reacher",
     "genre": "Thriller"
   },
@@ -999,15 +981,6 @@
     "genre": "Science"
   },
   {
-    "title": "Inappropriate",
-    "authors": "Vi Keeland",
-    "coverUrl": "https://m.media-amazon.com/images/I/51a5qii4VgL._SL500_.jpg",
-    "status": "finished",
-    "minutesLeft": null,
-    "series": "",
-    "genre": "Romance"
-  },
-  {
     "title": "SHRM-CP Audio Crash Course",
     "authors": "AudioLearn Content Team",
     "coverUrl": "https://m.media-amazon.com/images/I/51pLqsa6lPL._SL500_.jpg",
@@ -1125,15 +1098,6 @@
     "genre": "Business"
   },
   {
-    "title": "Tangle",
-    "authors": "Adriana Locke",
-    "coverUrl": "https://m.media-amazon.com/images/I/51derFaaUXL._SL500_.jpg",
-    "status": "finished",
-    "minutesLeft": null,
-    "series": "Dogwood Lane",
-    "genre": "Romance"
-  },
-  {
     "title": "A Little History of Philosophy",
     "authors": "Nigel Warburton",
     "coverUrl": "https://m.media-amazon.com/images/I/51yNfVTW3CL._SL500_.jpg",
@@ -1164,8 +1128,8 @@
     "title": "Blue Moon",
     "authors": "Lee Child",
     "coverUrl": "https://m.media-amazon.com/images/I/61GXhOYcZuL._SL500_.jpg",
-    "status": "in_progress",
-    "minutesLeft": 503,
+    "status": "finished",
+    "minutesLeft": null,
     "series": "Jack Reacher",
     "genre": "Thriller"
   },
@@ -1308,8 +1272,8 @@
     "title": "Past Tense",
     "authors": "Lee Child",
     "coverUrl": "https://m.media-amazon.com/images/I/41R7fScqEgL._SL500_.jpg",
-    "status": "in_progress",
-    "minutesLeft": 755,
+    "status": "finished",
+    "minutesLeft": null,
     "series": "Jack Reacher",
     "genre": "Thriller"
   },
@@ -1425,8 +1389,8 @@
     "title": "The Midnight Line",
     "authors": "Lee Child",
     "coverUrl": "https://m.media-amazon.com/images/I/51A+0ojqIqL._SL500_.jpg",
-    "status": "in_progress",
-    "minutesLeft": 770,
+    "status": "finished",
+    "minutesLeft": null,
     "series": "Jack Reacher",
     "genre": "Thriller"
   },
@@ -1587,8 +1551,8 @@
     "title": "Harry Potter and the Half-Blood Prince",
     "authors": "J.K. Rowling",
     "coverUrl": "https://m.media-amazon.com/images/I/51sImF7gqML._SL500_.jpg",
-    "status": "in_progress",
-    "minutesLeft": 55,
+    "status": "finished",
+    "minutesLeft": null,
     "series": "Harry Potter",
     "genre": "Fantasy"
   },
@@ -1800,20 +1764,11 @@
     "genre": "Thriller"
   },
   {
-    "title": "Fifty Shades of Grey",
-    "authors": "E L James",
-    "coverUrl": "https://m.media-amazon.com/images/I/51k48m7QAsL._SL500_.jpg",
-    "status": "finished",
-    "minutesLeft": null,
-    "series": "Fifty Shades of Grey",
-    "genre": "Romance"
-  },
-  {
     "title": "Tripwire",
     "authors": "Lee Child",
     "coverUrl": "https://m.media-amazon.com/images/I/5117EOKJELL._SL500_.jpg",
-    "status": "in_progress",
-    "minutesLeft": 601,
+    "status": "finished",
+    "minutesLeft": null,
     "series": "Jack Reacher",
     "genre": "Thriller"
   },
@@ -1848,8 +1803,8 @@
     "title": "Gone Tomorrow",
     "authors": "Lee Child",
     "coverUrl": "https://m.media-amazon.com/images/I/514TIc91RnL._SL500_.jpg",
-    "status": "in_progress",
-    "minutesLeft": 39,
+    "status": "finished",
+    "minutesLeft": null,
     "series": "Jack Reacher",
     "genre": "Thriller"
   }
