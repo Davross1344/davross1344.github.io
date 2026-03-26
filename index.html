@@ -543,19 +543,38 @@
     border-radius: 4px;
   }
 
-  /* The yellow "stub" notice shown while the books section is not yet filled in.
-     We'll remove this <div> from the HTML once real books are added. */
-  .stub-notice {
-    background: #FFFBF0;
-    border: 1.5px dashed #E8D87A; /* Dashed border signals a draft/placeholder */
-    border-radius: var(--r);
-    padding: 1.25rem 1.5rem;
-    font-size: 0.875rem;
-    color: #7A6A20;
-    margin-bottom: 2rem;
-    display: flex; align-items: center; gap: 0.75rem;
+  /* "In Progress" badge variant — blue tones */
+  .book-badge.in-progress {
+    background: #E8EFF8;
+    color: var(--blue);
   }
-  .stub-notice strong { font-weight: 600; }
+
+  /* "Show more" expand button, centred below the grid */
+  .books-expand-wrap {
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+  .books-expand-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.7rem 2rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    font-family: 'Figtree', sans-serif;
+    border: 1.5px solid var(--border);
+    background: var(--surface);
+    color: var(--ink);
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all var(--transition);
+  }
+  .books-expand-btn:hover {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+    color: var(--accent);
+    transform: translateY(-2px);
+  }
 
 
   /*
@@ -893,66 +912,16 @@
         Hover for notes, filter by genre.
       </p>
 
-      <!-- Temporary placeholder notice.
-           Once real books are in place, delete this entire <div class="stub-notice"> block. -->
-      <div class="stub-notice reveal">
-        <span>🚧</span>
-        <span><strong>Coming soon:</strong> Your Audible library will live here. Drop your book list and we'll wire this up!</span>
+      <!-- Genre filter buttons — generated dynamically by JS from bookdata.json -->
+      <div class="books-filter reveal" id="books-filter"></div>
+
+      <!-- Book cards grid — populated by JS after fetching bookdata.json -->
+      <div class="books-grid" id="books-grid"></div>
+
+      <!-- Show more / collapse button -->
+      <div class="books-expand-wrap reveal" id="books-expand-wrap" style="display:none;">
+        <button class="books-expand-btn" id="books-expand-btn">Show more</button>
       </div>
-
-      <!-- Genre filter buttons.
-           The first button has class="filter-btn active" — the "active" class
-           makes it highlighted by default.
-           JavaScript below switches the active class when you click a button.
-           Later, filtering will also show/hide book cards based on genre. -->
-      <div class="books-filter reveal">
-        <button class="filter-btn active">All</button>
-        <button class="filter-btn">Non-fiction</button>
-        <button class="filter-btn">Fiction</button>
-        <button class="filter-btn">Business</button>
-        <button class="filter-btn">Science</button>
-        <button class="filter-btn">History</button>
-      </div>
-
-      <!-- The grid of book cards.
-           Each .book-card is one book. We'll replace these four
-           placeholders with your real Audible titles. -->
-      <div class="books-grid">
-
-        <!-- BOOK CARD: Each card has a cover, title, author, and badge.
-             When we add your real books, we'll also add a data-genre attribute
-             so the filter buttons can show/hide the right cards.
-             Example: <div class="book-card" data-genre="fiction"> -->
-
-        <div class="book-card reveal">
-          <div class="book-cover">📖</div>
-          <div class="book-title">Book Title Goes Here</div>
-          <div class="book-author">Author Name</div>
-          <span class="book-badge">Audible</span>
-        </div>
-
-        <div class="book-card reveal">
-          <div class="book-cover">📗</div>
-          <div class="book-title">Another Great Read</div>
-          <div class="book-author">Author Name</div>
-          <span class="book-badge">Audible</span>
-        </div>
-
-        <div class="book-card reveal">
-          <div class="book-cover">📕</div>
-          <div class="book-title">A Third Book Title</div>
-          <div class="book-author">Author Name</div>
-          <span class="book-badge">Audible</span>
-        </div>
-
-        <div class="book-card reveal">
-          <div class="book-cover">📘</div>
-          <div class="book-title">Yet Another One</div>
-          <div class="book-author">Author Name</div>
-          <span class="book-badge">Audible</span>
-        </div>
-
-      </div><!-- end .books-grid -->
     </div>
   </section>
 
@@ -1044,7 +1013,7 @@
 
         <!-- Email link.
              The "mailto:" prefix opens the visitor's email app with a new message to you. -->
-        <a href="mailto:your@email.com" class="contact-link">
+        <a href="/cdn-cgi/l/email-protection#235a4c565163464e424a4f0d404c4e" class="contact-link">
           ✉️ Email
         </a>
 
@@ -1068,7 +1037,7 @@
   </footer>
 
 
-  <script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   /*
     ╔══════════════════════════════════════════════════════════════════╗
     ║  JAVASCRIPT                                                      ║
@@ -1175,37 +1144,136 @@
     we'll add it once real books with genre data are in the grid.
   */
 
-  // Find all filter buttons and loop through them
-  document.querySelectorAll('.filter-btn').forEach(btn => {
+  /*
+    ───────────────────────────────────────────────────────────────────
+    FEATURE 3: BOOKS — FETCH FROM bookdata.json, FILTER, SHOW MORE
+    ───────────────────────────────────────────────────────────────────
+    bookdata.json sits in the same folder as index.html.
+    We fetch it once on page load, then render 10 books at a time.
+    Genre filter buttons are built dynamically from the data.
+    The "Show more / Show less" button expands or collapses the rest.
+  */
 
-    // Add a "click" event listener to each button.
-    // The arrow function () => { ... } is the code that runs when clicked.
-    btn.addEventListener('click', () => {
+  // ── State ──────────────────────────────────────────────────────────
+  const PAGE_SIZE = 10;
+  let allBooks    = [];
+  let activeGenre = 'All';
+  let expanded    = false;
 
-      // Step 1: Remove "active" from every filter button
-      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  // ── Helpers ────────────────────────────────────────────────────────
 
-      // Step 2: Add "active" to the button that was just clicked.
-      // Inside the click handler, "btn" refers to the specific button clicked.
-      btn.classList.add('active');
+  function filteredBooks() {
+    if (activeGenre === 'All') return allBooks;
+    return allBooks.filter(b => b.genre === activeGenre);
+  }
 
-      // Step 3 (TODO): Filter the book cards to show only the selected genre.
-      // This will be added once each book card has a data-genre attribute.
-      //
-      // Here's a preview of what that logic will look like:
-      //
-      // const genre = btn.textContent.trim().toLowerCase(); // e.g. "fiction"
-      //
-      // document.querySelectorAll('.book-card').forEach(card => {
-      //   // Show the card if genre is "all" OR the card's genre matches
-      //   const matches = genre === 'all' || card.dataset.genre === genre;
-      //   card.style.display = matches ? 'block' : 'none';
-      // });
+  function makeCard(book) {
+    const card = document.createElement('div');
+    card.className = 'book-card';
+    card.dataset.genre = book.genre;
+
+    const isInProgress = book.status === 'in_progress';
+    const badgeClass   = isInProgress ? 'book-badge in-progress' : 'book-badge';
+    const badgeLabel   = isInProgress ? '▶ In Progress' : 'Audible';
+    const seriesMeta   = book.series
+      ? `<div class="book-author" style="font-style:italic;">${book.series}</div>`
+      : '';
+
+    card.innerHTML = `
+      <div class="book-cover" style="background:none;padding:0;">
+        <img src="${book.coverUrl}"
+             alt="${book.title}"
+             style="width:100%;height:100%;object-fit:cover;border-radius:6px;"
+             loading="lazy"
+             onerror="this.style.display='none';this.parentElement.textContent='📖';" />
+      </div>
+      <div class="book-title">${book.title}</div>
+      <div class="book-author">${book.authors}</div>
+      ${seriesMeta}
+      <span class="${badgeClass}">${badgeLabel}</span>
+    `;
+    return card;
+  }
+
+  // ── Render ─────────────────────────────────────────────────────────
+
+  function renderBooks() {
+    const grid      = document.getElementById('books-grid');
+    const wrapEl    = document.getElementById('books-expand-wrap');
+    const btnEl     = document.getElementById('books-expand-btn');
+    const books     = filteredBooks();
+    const visible   = expanded ? books : books.slice(0, PAGE_SIZE);
+    const remaining = books.length - PAGE_SIZE;
+
+    grid.innerHTML = '';
+    visible.forEach(b => {
+      const card = makeCard(b);
+      grid.appendChild(card);
     });
 
+    // Re-observe new cards for the scroll-reveal animation
+    grid.querySelectorAll('.book-card').forEach(el => observer.observe(el));
+
+    if (books.length > PAGE_SIZE) {
+      wrapEl.style.display = 'block';
+      btnEl.textContent = expanded
+        ? 'Show less'
+        : `Show ${remaining} more`;
+    } else {
+      wrapEl.style.display = 'none';
+    }
+  }
+
+  // ── Filter buttons ─────────────────────────────────────────────────
+
+  function buildFilters() {
+    const genres     = ['All', ...Array.from(new Set(allBooks.map(b => b.genre))).sort()];
+    const filterWrap = document.getElementById('books-filter');
+    filterWrap.innerHTML = '';
+
+    genres.forEach(genre => {
+      const btn = document.createElement('button');
+      btn.className = 'filter-btn' + (genre === 'All' ? ' active' : '');
+      btn.textContent = genre;
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        activeGenre = genre;
+        expanded = false;
+        renderBooks();
+      });
+      filterWrap.appendChild(btn);
+    });
+  }
+
+  // ── Expand / collapse ──────────────────────────────────────────────
+
+  document.getElementById('books-expand-btn').addEventListener('click', () => {
+    expanded = !expanded;
+    renderBooks();
+    if (!expanded) {
+      document.getElementById('books').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   });
 
-  </script>
+  // ── Fetch bookdata.json and kick everything off ────────────────────
+  // The path './bookdata.json' assumes the file is in the same folder
+  // as index.html — which is the normal GitHub Pages setup.
 
+  fetch('./bookdata.json')
+    .then(res => {
+      if (!res.ok) throw new Error('Could not load bookdata.json');
+      return res.json();
+    })
+    .then(data => {
+      allBooks = data;
+      buildFilters();
+      renderBooks();
+    })
+    .catch(err => {
+      console.error('Book data error:', err);
+      document.getElementById('books-grid').innerHTML =
+        '<p style="color:var(--ink-muted)">Could not load books. Make sure bookdata.json is in the same folder.</p>';
+    });  </script>
 </body>
 </html>
