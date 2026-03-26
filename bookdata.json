@@ -1,0 +1,1856 @@
+[
+  {
+    "title": "Creativity, Inc. (The Expanded Edition)",
+    "authors": "Ed Catmull, Amy Wallace",
+    "coverUrl": "https://m.media-amazon.com/images/I/41UR9glGfCL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 1012,
+    "series": "",
+    "genre": "Business"
+  },
+  {
+    "title": "Dinosaurs at the Dinner Party",
+    "authors": "Edward Dolnick",
+    "coverUrl": "https://m.media-amazon.com/images/I/51PSZjU7RkL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 47,
+    "series": "",
+    "genre": "History"
+  },
+  {
+    "title": "The Mysterious Affair at Styles",
+    "authors": "Agatha Christie",
+    "coverUrl": "https://m.media-amazon.com/images/I/61uNuf2hjSL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "A Hercule Poirot Mystery",
+    "genre": "Mystery"
+  },
+  {
+    "title": "The Humans",
+    "authors": "Matt Haig",
+    "coverUrl": "https://m.media-amazon.com/images/I/41ftH5KE2wL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 333,
+    "series": "",
+    "genre": "Literary Fiction"
+  },
+  {
+    "title": "The Great Mental Models: General Thinking Concepts",
+    "authors": "Shane Parrish",
+    "coverUrl": "https://m.media-amazon.com/images/I/51frmShzuIL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 136,
+    "series": "The Great Mental Models",
+    "genre": "Self-Help"
+  },
+  {
+    "title": "Atomic Habits",
+    "authors": "James Clear",
+    "coverUrl": "https://m.media-amazon.com/images/I/513Y5o-DYtL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": 3,
+    "series": "",
+    "genre": "Self-Help"
+  },
+  {
+    "title": "Exit Strategy",
+    "authors": "Lee Child, Andrew Child",
+    "coverUrl": "https://m.media-amazon.com/images/I/41nBGevAFtL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Jack Reacher",
+    "genre": "Thriller"
+  },
+  {
+    "title": "The Martian",
+    "authors": "Andy Weir",
+    "coverUrl": "https://m.media-amazon.com/images/I/414J3xG+7+L._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Science Fiction"
+  },
+  {
+    "title": "Project Hail Mary",
+    "authors": "Andy Weir",
+    "coverUrl": "https://m.media-amazon.com/images/I/51POf8gOyLL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Science Fiction"
+  },
+  {
+    "title": "Star Wars: The Last Command",
+    "authors": "Timothy Zahn",
+    "coverUrl": "https://m.media-amazon.com/images/I/51ELKfEF3fL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "The Thrawn Trilogy",
+    "genre": "Science Fiction"
+  },
+  {
+    "title": "Nexus",
+    "authors": "Yuval Noah Harari",
+    "coverUrl": "https://m.media-amazon.com/images/I/41UCKHR4yQL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 536,
+    "series": "",
+    "genre": "History"
+  },
+  {
+    "title": "The Road to Little Dribbling",
+    "authors": "Bill Bryson",
+    "coverUrl": "https://m.media-amazon.com/images/I/51qA9zOH3fL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 219,
+    "series": "",
+    "genre": "Travel"
+  },
+  {
+    "title": "The Great Gatsby",
+    "authors": "F. Scott Fitzgerald",
+    "coverUrl": "https://m.media-amazon.com/images/I/51Uorf8f+3L._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 254,
+    "series": "",
+    "genre": "Classic Fiction"
+  },
+  {
+    "title": "The Odyssey",
+    "authors": "Homer",
+    "coverUrl": "https://m.media-amazon.com/images/I/51EHBX7wPYL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Classic Fiction"
+  },
+  {
+    "title": "The Bill Bryson BBC Radio Collection",
+    "authors": "Bill Bryson",
+    "coverUrl": "https://m.media-amazon.com/images/I/512ntaL5B1L._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": 4,
+    "series": "",
+    "genre": "Humour"
+  },
+  {
+    "title": "The Clockwork Universe",
+    "authors": "Edward Dolnick",
+    "coverUrl": "https://m.media-amazon.com/images/I/61u-4YMFxUL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Science"
+  },
+  {
+    "title": "A Brief History of Earth",
+    "authors": "Andrew H. Knoll",
+    "coverUrl": "https://m.media-amazon.com/images/I/61xJfwDBvAL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 98,
+    "series": "",
+    "genre": "Science"
+  },
+  {
+    "title": "The Body: A Guide for Occupants",
+    "authors": "Bill Bryson",
+    "coverUrl": "https://m.media-amazon.com/images/I/41jpBuF957L._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 168,
+    "series": "",
+    "genre": "Science"
+  },
+  {
+    "title": "The Lost Continent",
+    "authors": "Bill Bryson",
+    "coverUrl": "https://m.media-amazon.com/images/I/51+t1pPOLVL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 183,
+    "series": "",
+    "genre": "Travel"
+  },
+  {
+    "title": "Icons of England",
+    "authors": "Bill Bryson",
+    "coverUrl": "https://m.media-amazon.com/images/I/51oyg8FLuCL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Travel"
+  },
+  {
+    "title": "Neither Here nor There",
+    "authors": "Bill Bryson",
+    "coverUrl": "https://m.media-amazon.com/images/I/51Bm0qdjGmL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": 5,
+    "series": "",
+    "genre": "Travel"
+  },
+  {
+    "title": "In a Sunburned Country",
+    "authors": "Bill Bryson",
+    "coverUrl": "https://m.media-amazon.com/images/I/51Cp4aTKXKL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 671,
+    "series": "",
+    "genre": "Travel"
+  },
+  {
+    "title": "The DevOps Handbook",
+    "authors": "Gene Kim, Jez Humble, Patrick Debois, John Willis, Nicole Forsgren",
+    "coverUrl": "https://m.media-amazon.com/images/I/51-LRjBPDxL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 418,
+    "series": "",
+    "genre": "Technology"
+  },
+  {
+    "title": "A Tale of Two Cities",
+    "authors": "Charles Dickens",
+    "coverUrl": "https://m.media-amazon.com/images/I/51LbS9LtfEL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 399,
+    "series": "",
+    "genre": "Classic Fiction"
+  },
+  {
+    "title": "Cosmos: A Personal Voyage",
+    "authors": "Carl Sagan",
+    "coverUrl": "https://m.media-amazon.com/images/I/51e91glnHUL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 374,
+    "series": "Cosmos",
+    "genre": "Science"
+  },
+  {
+    "title": "The Year in Tech, 2025",
+    "authors": "Harvard Business Review",
+    "coverUrl": "https://m.media-amazon.com/images/I/51JV1yyRoEL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 185,
+    "series": "",
+    "genre": "Technology"
+  },
+  {
+    "title": "The Life and Times of the Thunderbolt Kid",
+    "authors": "Bill Bryson",
+    "coverUrl": "https://m.media-amazon.com/images/I/51WP2FkNNPL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 18,
+    "series": "",
+    "genre": "Memoir"
+  },
+  {
+    "title": "The Splendid and the Vile",
+    "authors": "Erik Larson",
+    "coverUrl": "https://m.media-amazon.com/images/I/51kQbBa2QTL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "History"
+  },
+  {
+    "title": "One Summer: America, 1927",
+    "authors": "Bill Bryson",
+    "coverUrl": "https://m.media-amazon.com/images/I/51g1xBpU19L._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 409,
+    "series": "",
+    "genre": "History"
+  },
+  {
+    "title": "Sherlock Holmes: The Definitive Collection",
+    "authors": "Arthur Conan Doyle",
+    "coverUrl": "https://m.media-amazon.com/images/I/51JbzD3S8oL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Sherlock Holmes",
+    "genre": "Mystery"
+  },
+  {
+    "title": "The P.G. Wodehouse Collection",
+    "authors": "P. G. Wodehouse",
+    "coverUrl": "https://m.media-amazon.com/images/I/61m4wkHKFfL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 499,
+    "series": "",
+    "genre": "Humour"
+  },
+  {
+    "title": "Great Expectations",
+    "authors": "Charles Dickens",
+    "coverUrl": "https://m.media-amazon.com/images/I/51tKHUETUyL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 400,
+    "series": "",
+    "genre": "Classic Fiction"
+  },
+  {
+    "title": "Meditations",
+    "authors": "Marcus Aurelius",
+    "coverUrl": "https://m.media-amazon.com/images/I/51mlbBH0A9L._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 262,
+    "series": "",
+    "genre": "Philosophy"
+  },
+  {
+    "title": "In Too Deep",
+    "authors": "Lee Child, Andrew Child",
+    "coverUrl": "https://m.media-amazon.com/images/I/51tc8Gz5u2L._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Jack Reacher",
+    "genre": "Thriller"
+  },
+  {
+    "title": "Isaac Newton",
+    "authors": "James Gleick",
+    "coverUrl": "https://m.media-amazon.com/images/I/41JZav1T24L._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 58,
+    "series": "",
+    "genre": "Biography"
+  },
+  {
+    "title": "A Little History of Science",
+    "authors": "William F. Bynum",
+    "coverUrl": "https://m.media-amazon.com/images/I/516DHMTuf+L._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Little Histories Series",
+    "genre": "Science"
+  },
+  {
+    "title": "Learn French with Paul Noble (Complete Course)",
+    "authors": "Paul Noble",
+    "coverUrl": "https://m.media-amazon.com/images/I/41i7RQLrs8L._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Language Learning"
+  },
+  {
+    "title": "What If?",
+    "authors": "Randall Munroe",
+    "coverUrl": "https://m.media-amazon.com/images/I/41G8kkaChqL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 269,
+    "series": "",
+    "genre": "Science"
+  },
+  {
+    "title": "It's a Gas",
+    "authors": "Mark Miodownik",
+    "coverUrl": "https://m.media-amazon.com/images/I/51ETyebjRtL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 16,
+    "series": "",
+    "genre": "Science"
+  },
+  {
+    "title": "Material World",
+    "authors": "Ed Conway",
+    "coverUrl": "https://m.media-amazon.com/images/I/4160cG8QQCL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 36,
+    "series": "",
+    "genre": "Science"
+  },
+  {
+    "title": "It's Elemental",
+    "authors": "Kate Biberdorf",
+    "coverUrl": "https://m.media-amazon.com/images/I/41Ch8DtiQcS._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 539,
+    "series": "",
+    "genre": "Science"
+  },
+  {
+    "title": "The Things We Make",
+    "authors": "Bill Hammack",
+    "coverUrl": "https://m.media-amazon.com/images/I/51K-aWTWOvL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Science"
+  },
+  {
+    "title": "A Walk in the Woods",
+    "authors": "Bill Bryson",
+    "coverUrl": "https://m.media-amazon.com/images/I/61u+qpjmQgL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Travel"
+  },
+  {
+    "title": "Harry Potter and the Deathly Hallows (Stephen Fry)",
+    "authors": "J.K. Rowling",
+    "coverUrl": "https://m.media-amazon.com/images/I/51Q85tQXLoL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 863,
+    "series": "Harry Potter",
+    "genre": "Fantasy"
+  },
+  {
+    "title": "Harry Potter and the Half-Blood Prince (Stephen Fry)",
+    "authors": "J.K. Rowling",
+    "coverUrl": "https://m.media-amazon.com/images/I/51w1UzxPa8L._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Harry Potter",
+    "genre": "Fantasy"
+  },
+  {
+    "title": "Harry Potter and the Order of the Phoenix (Stephen Fry)",
+    "authors": "J.K. Rowling",
+    "coverUrl": "https://m.media-amazon.com/images/I/51NjsvMWAyL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 17,
+    "series": "Harry Potter",
+    "genre": "Fantasy"
+  },
+  {
+    "title": "Harry Potter and the Goblet of Fire (Stephen Fry)",
+    "authors": "J.K. Rowling",
+    "coverUrl": "https://m.media-amazon.com/images/I/51IyMF2d13L._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 12,
+    "series": "Harry Potter",
+    "genre": "Fantasy"
+  },
+  {
+    "title": "Harry Potter and the Prisoner of Azkaban (Stephen Fry)",
+    "authors": "J.K. Rowling",
+    "coverUrl": "https://m.media-amazon.com/images/I/51c7Hf-qC7L._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": 7,
+    "series": "Harry Potter",
+    "genre": "Fantasy"
+  },
+  {
+    "title": "Harry Potter and the Chamber of Secrets (Stephen Fry)",
+    "authors": "J.K. Rowling",
+    "coverUrl": "https://m.media-amazon.com/images/I/51nt7iGQjBL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Harry Potter",
+    "genre": "Fantasy"
+  },
+  {
+    "title": "Harry Potter and the Philosopher's Stone (Stephen Fry)",
+    "authors": "J.K. Rowling",
+    "coverUrl": "https://m.media-amazon.com/images/I/51vT1F3YZnL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Harry Potter",
+    "genre": "Fantasy"
+  },
+  {
+    "title": "Star Wars: Dark Force Rising",
+    "authors": "Timothy Zahn",
+    "coverUrl": "https://m.media-amazon.com/images/I/51L0R1zmsIL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 833,
+    "series": "The Thrawn Trilogy",
+    "genre": "Science Fiction"
+  },
+  {
+    "title": "Say the Right Thing",
+    "authors": "Kenji Yoshino, David Glasgow",
+    "coverUrl": "https://m.media-amazon.com/images/I/61NIF8VBx3L._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Self-Help"
+  },
+  {
+    "title": "Star Wars: Heir to the Empire",
+    "authors": "Timothy Zahn",
+    "coverUrl": "https://m.media-amazon.com/images/I/41XrjNDEMFL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "The Thrawn Trilogy",
+    "genre": "Science Fiction"
+  },
+  {
+    "title": "The Unity of Science",
+    "authors": "Irwin Shapiro",
+    "coverUrl": "https://m.media-amazon.com/images/I/51ccT+OiCYL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Science"
+  },
+  {
+    "title": "Freakonomics",
+    "authors": "Steven D. Levitt, Stephen J. Dubner",
+    "coverUrl": "https://m.media-amazon.com/images/I/51CUvlxvifL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 89,
+    "series": "",
+    "genre": "Economics"
+  },
+  {
+    "title": "The Stranger I Married",
+    "authors": "Sylvia Day",
+    "coverUrl": "https://m.media-amazon.com/images/I/41gU75atVFL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Romance"
+  },
+  {
+    "title": "At Home: A Short History of Private Life",
+    "authors": "Bill Bryson",
+    "coverUrl": "https://m.media-amazon.com/images/I/41H5Lvsgr9L._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 109,
+    "series": "",
+    "genre": "History"
+  },
+  {
+    "title": "A Walk in the Woods (US edition)",
+    "authors": "Bill Bryson",
+    "coverUrl": "https://m.media-amazon.com/images/I/61DYCvlzCVL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Travel"
+  },
+  {
+    "title": "PHR/SPHR Audio Study Guide",
+    "authors": "Matt Webber",
+    "coverUrl": "https://m.media-amazon.com/images/I/61+SVS6qtRL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 372,
+    "series": "",
+    "genre": "Professional Development"
+  },
+  {
+    "title": "The Secret (Jack Reacher)",
+    "authors": "Lee Child, Andrew Child",
+    "coverUrl": "https://m.media-amazon.com/images/I/51B+4t34+OL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 144,
+    "series": "Jack Reacher",
+    "genre": "Thriller"
+  },
+  {
+    "title": "Origin",
+    "authors": "Dan Brown",
+    "coverUrl": "https://m.media-amazon.com/images/I/41Y2RRaVRQL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 1057,
+    "series": "Robert Langdon",
+    "genre": "Thriller"
+  },
+  {
+    "title": "Surely You're Joking, Mr. Feynman!",
+    "authors": "Richard P. Feynman",
+    "coverUrl": "https://m.media-amazon.com/images/I/510fhCMBFoL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 684,
+    "series": "",
+    "genre": "Biography"
+  },
+  {
+    "title": "The Art of Statistics",
+    "authors": "David Spiegelhalter",
+    "coverUrl": "https://m.media-amazon.com/images/I/61BuQU5UbCL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 416,
+    "series": "",
+    "genre": "Mathematics"
+  },
+  {
+    "title": "The Lost Symbol",
+    "authors": "Dan Brown",
+    "coverUrl": "https://m.media-amazon.com/images/I/51hHcrnGZML._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Robert Langdon",
+    "genre": "Thriller"
+  },
+  {
+    "title": "A Walk Around the Block",
+    "authors": "Spike Carlsen",
+    "coverUrl": "https://m.media-amazon.com/images/I/61HXVpFnrJL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 237,
+    "series": "",
+    "genre": "Science"
+  },
+  {
+    "title": "This Idea is Brilliant",
+    "authors": "John Brockman",
+    "coverUrl": "https://m.media-amazon.com/images/I/51XqdgXoW2L._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 903,
+    "series": "",
+    "genre": "Science"
+  },
+  {
+    "title": "Theory of Relativity: and Other Essays",
+    "authors": "Albert Einstein",
+    "coverUrl": "https://m.media-amazon.com/images/I/51KvfCwxy7L._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 145,
+    "series": "",
+    "genre": "Science"
+  },
+  {
+    "title": "Walt Disney: An American Original",
+    "authors": "Bob Thomas",
+    "coverUrl": "https://m.media-amazon.com/images/I/41AVgAWHAtL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 499,
+    "series": "",
+    "genre": "Biography"
+  },
+  {
+    "title": "Into the Black",
+    "authors": "Rowland White",
+    "coverUrl": "https://m.media-amazon.com/images/I/515+rUv7G1L._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 646,
+    "series": "",
+    "genre": "History"
+  },
+  {
+    "title": "Bringing Columbia Home",
+    "authors": "Michael D. Leinbach, Jonathan H. Ward",
+    "coverUrl": "https://m.media-amazon.com/images/I/51ZH4w7H+gL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "History"
+  },
+  {
+    "title": "The Icepick Surgeon",
+    "authors": "Sam Kean",
+    "coverUrl": "https://m.media-amazon.com/images/I/51NQkfTTttS._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 437,
+    "series": "",
+    "genre": "History"
+  },
+  {
+    "title": "The Bastard Brigade",
+    "authors": "Sam Kean",
+    "coverUrl": "https://m.media-amazon.com/images/I/51w5aBCx9KL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "History"
+  },
+  {
+    "title": "The Disappearing Spoon",
+    "authors": "Sam Kean",
+    "coverUrl": "https://m.media-amazon.com/images/I/61sdZz+5gCL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Science"
+  },
+  {
+    "title": "Seven Years to Sin",
+    "authors": "Sylvia Day",
+    "coverUrl": "https://m.media-amazon.com/images/I/51DN0yGsUAL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Romance"
+  },
+  {
+    "title": "The McKinsey Way",
+    "authors": "Ethan M. Rasiel",
+    "coverUrl": "https://m.media-amazon.com/images/I/51ru8NubhIL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Business"
+  },
+  {
+    "title": "The Speed of Trust",
+    "authors": "Stephen M.R. Covey",
+    "coverUrl": "https://m.media-amazon.com/images/I/51OmmVxeUVL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 637,
+    "series": "",
+    "genre": "Business"
+  },
+  {
+    "title": "No Plan B",
+    "authors": "Lee Child, Andrew Child",
+    "coverUrl": "https://m.media-amazon.com/images/I/515XImy-v2L._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 616,
+    "series": "Jack Reacher",
+    "genre": "Thriller"
+  },
+  {
+    "title": "Storm in a Teacup",
+    "authors": "Helen Czerski",
+    "coverUrl": "https://m.media-amazon.com/images/I/41FRMCkXeyL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Science"
+  },
+  {
+    "title": "A Man on the Moon",
+    "authors": "Andrew Chaikin",
+    "coverUrl": "https://m.media-amazon.com/images/I/61cUMemz-1L._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "History"
+  },
+  {
+    "title": "How Not to Be Wrong",
+    "authors": "Jordan Ellenberg",
+    "coverUrl": "https://m.media-amazon.com/images/I/41w0iQ8Mf4L._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 663,
+    "series": "",
+    "genre": "Mathematics"
+  },
+  {
+    "title": "Elemental",
+    "authors": "Tim James",
+    "coverUrl": "https://m.media-amazon.com/images/I/41LO3mlVXxL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Science"
+  },
+  {
+    "title": "How to Invent Everything",
+    "authors": "Ryan North",
+    "coverUrl": "https://m.media-amazon.com/images/I/61UAc8fTLyL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 263,
+    "series": "",
+    "genre": "Science"
+  },
+  {
+    "title": "Numbers Don't Lie",
+    "authors": "Vaclav Smil",
+    "coverUrl": "https://m.media-amazon.com/images/I/518Pb3StQ+L._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Science"
+  },
+  {
+    "title": "Caesar's Last Breath",
+    "authors": "Sam Kean",
+    "coverUrl": "https://m.media-amazon.com/images/I/61FuN1jph3L._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Science"
+  },
+  {
+    "title": "The Ultimate Guide to Master Astrophotography",
+    "authors": "Planet Seekers",
+    "coverUrl": "https://m.media-amazon.com/images/I/51GxNDbWbXS._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Science"
+  },
+  {
+    "title": "The Ride of a Lifetime",
+    "authors": "Robert Iger",
+    "coverUrl": "https://m.media-amazon.com/images/I/41J4A8QIMHL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 504,
+    "series": "",
+    "genre": "Business"
+  },
+  {
+    "title": "A Brief History of Creation",
+    "authors": "Bill Mesler, H. James Cleaves II",
+    "coverUrl": "https://m.media-amazon.com/images/I/51DlJYm8V5L._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 571,
+    "series": "",
+    "genre": "Science"
+  },
+  {
+    "title": "The Dawn of Everything",
+    "authors": "David Graeber, David Wengrow",
+    "coverUrl": "https://m.media-amazon.com/images/I/41P96HeWWcL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "History"
+  },
+  {
+    "title": "The Quantum Universe",
+    "authors": "Brian Cox, Jeff Forshaw",
+    "coverUrl": "https://m.media-amazon.com/images/I/513KA+upD6L._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 50,
+    "series": "",
+    "genre": "Science"
+  },
+  {
+    "title": "The Effective Executive",
+    "authors": "Peter F. Drucker",
+    "coverUrl": "https://m.media-amazon.com/images/I/51Enxbm74iL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 262,
+    "series": "",
+    "genre": "Business"
+  },
+  {
+    "title": "Savage Son",
+    "authors": "Jack Carr",
+    "coverUrl": "https://m.media-amazon.com/images/I/515qYAfuLoL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Terminal List",
+    "genre": "Thriller"
+  },
+  {
+    "title": "The Little Black Book of Human Resources Management",
+    "authors": "Barry Wolfe",
+    "coverUrl": "https://m.media-amazon.com/images/I/416gq5-QLaL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Business"
+  },
+  {
+    "title": "Better Off Dead",
+    "authors": "Lee Child, Andrew Child",
+    "coverUrl": "https://m.media-amazon.com/images/I/51EPEkaafQL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Jack Reacher",
+    "genre": "Thriller"
+  },
+  {
+    "title": "The Return of the King",
+    "authors": "J. R. R. Tolkien",
+    "coverUrl": "https://m.media-amazon.com/images/I/51KBy8XxMzL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 721,
+    "series": "The Lord of the Rings",
+    "genre": "Fantasy"
+  },
+  {
+    "title": "The Two Towers",
+    "authors": "J. R. R. Tolkien",
+    "coverUrl": "https://m.media-amazon.com/images/I/51EgIMxu00L._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "The Lord of the Rings",
+    "genre": "Fantasy"
+  },
+  {
+    "title": "The Fellowship of the Ring",
+    "authors": "J. R. R. Tolkien",
+    "coverUrl": "https://m.media-amazon.com/images/I/51YHc7SK5HL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 1032,
+    "series": "The Lord of the Rings",
+    "genre": "Fantasy"
+  },
+  {
+    "title": "Dishonesty Is the Second-Best Policy",
+    "authors": "David Mitchell",
+    "coverUrl": "https://m.media-amazon.com/images/I/41zTAVZ6XCL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 245,
+    "series": "",
+    "genre": "Humour"
+  },
+  {
+    "title": "Prodigal Son",
+    "authors": "Gregg Hurwitz",
+    "coverUrl": "https://m.media-amazon.com/images/I/516PJ+4BvqL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Orphan X",
+    "genre": "Thriller"
+  },
+  {
+    "title": "Stuff You Should Know",
+    "authors": "Josh Clark, Chuck Bryant",
+    "coverUrl": "https://m.media-amazon.com/images/I/51l2-iICKmL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Humour"
+  },
+  {
+    "title": "Humble Pi",
+    "authors": "Matt Parker",
+    "coverUrl": "https://m.media-amazon.com/images/I/41HqEiXBoDL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 275,
+    "series": "",
+    "genre": "Mathematics"
+  },
+  {
+    "title": "Into the Fire",
+    "authors": "Gregg Hurwitz",
+    "coverUrl": "https://m.media-amazon.com/images/I/51vAk7e-bDL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Orphan X",
+    "genre": "Thriller"
+  },
+  {
+    "title": "Out of the Dark",
+    "authors": "Gregg Hurwitz",
+    "coverUrl": "https://m.media-amazon.com/images/I/51pcZ-w5V8L._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Orphan X",
+    "genre": "Thriller"
+  },
+  {
+    "title": "Hellbent",
+    "authors": "Gregg Hurwitz",
+    "coverUrl": "https://m.media-amazon.com/images/I/51VKM+WNjLL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Orphan X",
+    "genre": "Thriller"
+  },
+  {
+    "title": "The Nowhere Man",
+    "authors": "Gregg Hurwitz",
+    "coverUrl": "https://m.media-amazon.com/images/I/51eWhLUqdxL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Orphan X",
+    "genre": "Thriller"
+  },
+  {
+    "title": "Orphan X",
+    "authors": "Gregg Hurwitz",
+    "coverUrl": "https://m.media-amazon.com/images/I/41bbRx-UaJL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Orphan X",
+    "genre": "Thriller"
+  },
+  {
+    "title": "Electric Universe",
+    "authors": "David Bodanis",
+    "coverUrl": "https://m.media-amazon.com/images/I/41qknMB03PL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 275,
+    "series": "",
+    "genre": "Science"
+  },
+  {
+    "title": "The Sentinel",
+    "authors": "Lee Child, Andrew Child",
+    "coverUrl": "https://m.media-amazon.com/images/I/61klrffOxYL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": 6,
+    "series": "Jack Reacher",
+    "genre": "Thriller"
+  },
+  {
+    "title": "Liquid Rules",
+    "authors": "Mark Miodownik",
+    "coverUrl": "https://m.media-amazon.com/images/I/51dUyZcsyTL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 17,
+    "series": "",
+    "genre": "Science"
+  },
+  {
+    "title": "HBR's 10 Must Reads on Creativity",
+    "authors": "Harvard Business Review",
+    "coverUrl": "https://m.media-amazon.com/images/I/418bUCxv4AL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 363,
+    "series": "HBR's 10 Must Reads",
+    "genre": "Business"
+  },
+  {
+    "title": "The Return of the King (alt. edition)",
+    "authors": "J. R. R. Tolkien",
+    "coverUrl": "https://m.media-amazon.com/images/I/51khjD+sTyL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "The Lord of the Rings",
+    "genre": "Fantasy"
+  },
+  {
+    "title": "The Origins of Everything in 100 Pages",
+    "authors": "David Bercovici",
+    "coverUrl": "https://m.media-amazon.com/images/I/510ZTAPa3JL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 231,
+    "series": "",
+    "genre": "Science"
+  },
+  {
+    "title": "Inappropriate",
+    "authors": "Vi Keeland",
+    "coverUrl": "https://m.media-amazon.com/images/I/51a5qii4VgL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Romance"
+  },
+  {
+    "title": "SHRM-CP Audio Crash Course",
+    "authors": "AudioLearn Content Team",
+    "coverUrl": "https://m.media-amazon.com/images/I/51pLqsa6lPL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 240,
+    "series": "",
+    "genre": "Professional Development"
+  },
+  {
+    "title": "The Mother Tongue",
+    "authors": "Bill Bryson",
+    "coverUrl": "https://m.media-amazon.com/images/I/51jbcJPtTfL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Language"
+  },
+  {
+    "title": "Made in America",
+    "authors": "Bill Bryson",
+    "coverUrl": "https://m.media-amazon.com/images/I/61nGuNMAkZL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 686,
+    "series": "",
+    "genre": "History"
+  },
+  {
+    "title": "The Two Towers (alt. edition)",
+    "authors": "J. R. R. Tolkien",
+    "coverUrl": "https://m.media-amazon.com/images/I/517Ntsz3GqL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "The Lord of the Rings",
+    "genre": "Fantasy"
+  },
+  {
+    "title": "The Fellowship of the Ring (alt. edition)",
+    "authors": "J. R. R. Tolkien",
+    "coverUrl": "https://m.media-amazon.com/images/I/51eVNlqfveL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "The Lord of the Rings",
+    "genre": "Fantasy"
+  },
+  {
+    "title": "HBR's 10 Must Reads on Managing Across Cultures",
+    "authors": "Harvard Business Review",
+    "coverUrl": "https://m.media-amazon.com/images/I/51opiLiN9aL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 324,
+    "series": "HBR's 10 Must Reads",
+    "genre": "Business"
+  },
+  {
+    "title": "It's Our Ship",
+    "authors": "D. Michael Abrashoff",
+    "coverUrl": "https://m.media-amazon.com/images/I/41QOFqHZbhL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 169,
+    "series": "",
+    "genre": "Business"
+  },
+  {
+    "title": "Turn the Ship Around!",
+    "authors": "L. David Marquet",
+    "coverUrl": "https://m.media-amazon.com/images/I/51TnXen-lIL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Business"
+  },
+  {
+    "title": "The Ten-Day MBA",
+    "authors": "Steven A. Silbiger",
+    "coverUrl": "https://m.media-amazon.com/images/I/51cMVa3cYoL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 614,
+    "series": "",
+    "genre": "Business"
+  },
+  {
+    "title": "Understanding Michael Porter",
+    "authors": "Joan Magretta",
+    "coverUrl": "https://m.media-amazon.com/images/I/513skEs-mQL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Business"
+  },
+  {
+    "title": "HBR's 10 Must Reads on Strategy",
+    "authors": "Harvard Business Review",
+    "coverUrl": "https://m.media-amazon.com/images/I/51I-6hQJr+L._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "HBR's 10 Must Reads",
+    "genre": "Business"
+  },
+  {
+    "title": "Sleep Better",
+    "authors": "Aaptiv",
+    "coverUrl": "https://m.media-amazon.com/images/I/51XpdrVGDSL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Health & Wellness"
+  },
+  {
+    "title": "The Lords of Strategy",
+    "authors": "Walter Kiechel III",
+    "coverUrl": "https://m.media-amazon.com/images/I/41TkZAV+4UL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Business"
+  },
+  {
+    "title": "Tangle",
+    "authors": "Adriana Locke",
+    "coverUrl": "https://m.media-amazon.com/images/I/51derFaaUXL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Dogwood Lane",
+    "genre": "Romance"
+  },
+  {
+    "title": "A Little History of Philosophy",
+    "authors": "Nigel Warburton",
+    "coverUrl": "https://m.media-amazon.com/images/I/51yNfVTW3CL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 50,
+    "series": "Little Histories Series",
+    "genre": "Philosophy"
+  },
+  {
+    "title": "Stuff Matters",
+    "authors": "Mark Miodownik",
+    "coverUrl": "https://m.media-amazon.com/images/I/51E3nx13mHL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 47,
+    "series": "",
+    "genre": "Science"
+  },
+  {
+    "title": "Invisible",
+    "authors": "James Patterson, David Ellis",
+    "coverUrl": "https://m.media-amazon.com/images/I/41gEA9Nf8LL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Thriller"
+  },
+  {
+    "title": "Blue Moon",
+    "authors": "Lee Child",
+    "coverUrl": "https://m.media-amazon.com/images/I/61GXhOYcZuL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 503,
+    "series": "Jack Reacher",
+    "genre": "Thriller"
+  },
+  {
+    "title": "The President Is Missing",
+    "authors": "James Patterson, Bill Clinton",
+    "coverUrl": "https://m.media-amazon.com/images/I/51onjljR19L._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Thriller"
+  },
+  {
+    "title": "Happy",
+    "authors": "Derren Brown",
+    "coverUrl": "https://m.media-amazon.com/images/I/51rm-BqPvXL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 758,
+    "series": "",
+    "genre": "Philosophy"
+  },
+  {
+    "title": "True Believer",
+    "authors": "Jack Carr",
+    "coverUrl": "https://m.media-amazon.com/images/I/51z0LyW3wjL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Terminal List",
+    "genre": "Thriller"
+  },
+  {
+    "title": "For the Love of Physics",
+    "authors": "Walter Lewin, Warren Goldstein",
+    "coverUrl": "https://m.media-amazon.com/images/I/51VzFTlVqsL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 61,
+    "series": "",
+    "genre": "Science"
+  },
+  {
+    "title": "Without Measure",
+    "authors": "Scott Blade",
+    "coverUrl": "https://m.media-amazon.com/images/I/51cCTAnyCYL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Jack Widow",
+    "genre": "Thriller"
+  },
+  {
+    "title": "Guns, Germs and Steel",
+    "authors": "Jared Diamond",
+    "coverUrl": "https://m.media-amazon.com/images/I/51Oi+FcrkKL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 588,
+    "series": "",
+    "genre": "History"
+  },
+  {
+    "title": "The Personal MBA",
+    "authors": "Josh Kaufman",
+    "coverUrl": "https://m.media-amazon.com/images/I/51TpKdRgVbL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Business"
+  },
+  {
+    "title": "Macbeth",
+    "authors": "William Shakespeare",
+    "coverUrl": "https://m.media-amazon.com/images/I/61Z1fGqTHLL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": 5,
+    "series": "",
+    "genre": "Classic Fiction"
+  },
+  {
+    "title": "A Reason to Kill",
+    "authors": "Scott Blade",
+    "coverUrl": "https://m.media-amazon.com/images/I/51Yfh-xGmcL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Jack Widow",
+    "genre": "Thriller"
+  },
+  {
+    "title": "Shakespeare: The World as Stage",
+    "authors": "Bill Bryson",
+    "coverUrl": "https://m.media-amazon.com/images/I/61MJebCImjL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 13,
+    "series": "",
+    "genre": "Biography"
+  },
+  {
+    "title": "Winter Territory",
+    "authors": "Scott Blade",
+    "coverUrl": "https://m.media-amazon.com/images/I/51hh+mcg9ML._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Jack Widow",
+    "genre": "Thriller"
+  },
+  {
+    "title": "Gone Forever",
+    "authors": "Scott Blade",
+    "coverUrl": "https://m.media-amazon.com/images/I/51n99IyoW0L._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Jack Widow",
+    "genre": "Thriller"
+  },
+  {
+    "title": "The Terminal List",
+    "authors": "Jack Carr",
+    "coverUrl": "https://m.media-amazon.com/images/I/41oBbuBwPCL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Terminal List",
+    "genre": "Thriller"
+  },
+  {
+    "title": "Happiness in This Life",
+    "authors": "Pope Francis",
+    "coverUrl": "https://m.media-amazon.com/images/I/51MxEclZYRL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Philosophy"
+  },
+  {
+    "title": "Bill Bryson's Appliance of Science",
+    "authors": "Bill Bryson",
+    "coverUrl": "https://m.media-amazon.com/images/I/51HFI8IpnzL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Science"
+  },
+  {
+    "title": "Past Tense",
+    "authors": "Lee Child",
+    "coverUrl": "https://m.media-amazon.com/images/I/41R7fScqEgL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 755,
+    "series": "Jack Reacher",
+    "genre": "Thriller"
+  },
+  {
+    "title": "Sapiens",
+    "authors": "Yuval Noah Harari",
+    "coverUrl": "https://m.media-amazon.com/images/I/41HWFhtig3L._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 91,
+    "series": "Sapiens",
+    "genre": "History"
+  },
+  {
+    "title": "Harry Potter and the Deathly Hallows",
+    "authors": "J.K. Rowling",
+    "coverUrl": "https://m.media-amazon.com/images/I/61yMjtQzKcL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Harry Potter",
+    "genre": "Fantasy"
+  },
+  {
+    "title": "Why Does E=MC2?",
+    "authors": "Brian Cox, Jeff Forshaw",
+    "coverUrl": "https://m.media-amazon.com/images/I/51X0Ew9mCPL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 80,
+    "series": "",
+    "genre": "Science"
+  },
+  {
+    "title": "Forces of Nature",
+    "authors": "Professor Brian Cox, Andrew Cohen",
+    "coverUrl": "https://m.media-amazon.com/images/I/61PJAYUP2AL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Science"
+  },
+  {
+    "title": "Brain Myths Exploded",
+    "authors": "The Great Courses, Indre Viskontas",
+    "coverUrl": "https://m.media-amazon.com/images/I/51TYblAIACL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Science"
+  },
+  {
+    "title": "French Short Stories for Beginners",
+    "authors": "Frederic Bibard",
+    "coverUrl": "https://m.media-amazon.com/images/I/51TUlOJTQOL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 594,
+    "series": "",
+    "genre": "Language Learning"
+  },
+  {
+    "title": "Learn French with Paul Noble \u2013 Part 1",
+    "authors": "Paul Noble",
+    "coverUrl": "https://m.media-amazon.com/images/I/41f-KpqzWcL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 163,
+    "series": "",
+    "genre": "Language Learning"
+  },
+  {
+    "title": "Homo Deus",
+    "authors": "Yuval Noah Harari",
+    "coverUrl": "https://m.media-amazon.com/images/I/51KkLSCnslL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 151,
+    "series": "Sapiens",
+    "genre": "History"
+  },
+  {
+    "title": "Sleep Meditation Bundle",
+    "authors": "Meditation Guru",
+    "coverUrl": "https://m.media-amazon.com/images/I/519VFGx4wQL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Health & Wellness"
+  },
+  {
+    "title": "Harry Potter et l'Ordre du Ph\u00e9nix (French)",
+    "authors": "J.K. Rowling",
+    "coverUrl": "https://m.media-amazon.com/images/I/51lbIDsiEeL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Harry Potter",
+    "genre": "Fantasy"
+  },
+  {
+    "title": "The 7 Habits of Highly Effective People",
+    "authors": "Stephen R. Covey",
+    "coverUrl": "https://m.media-amazon.com/images/I/51OuvCFwyZL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Self-Help"
+  },
+  {
+    "title": "Three More Jack Reacher Novellas",
+    "authors": "Lee Child",
+    "coverUrl": "https://m.media-amazon.com/images/I/51MS464qaoL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Jack Reacher",
+    "genre": "Thriller"
+  },
+  {
+    "title": "The Midnight Line",
+    "authors": "Lee Child",
+    "coverUrl": "https://m.media-amazon.com/images/I/51A+0ojqIqL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 770,
+    "series": "Jack Reacher",
+    "genre": "Thriller"
+  },
+  {
+    "title": "E=mc\u00b2: A Biography of the World's Most Famous Equation",
+    "authors": "David Bodanis",
+    "coverUrl": "https://m.media-amazon.com/images/I/41b9jO6rN9L._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 44,
+    "series": "",
+    "genre": "Science"
+  },
+  {
+    "title": "Welcome to the Universe",
+    "authors": "Neil deGrasse Tyson, Michael A. Strauss, J. Richard Gott",
+    "coverUrl": "https://m.media-amazon.com/images/I/51G9pDUq6IL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 375,
+    "series": "",
+    "genre": "Science"
+  },
+  {
+    "title": "The Subtle Art of Not Giving a F*ck",
+    "authors": "Mark Manson",
+    "coverUrl": "https://m.media-amazon.com/images/I/51MT0MbpD7L._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 307,
+    "series": "",
+    "genre": "Self-Help"
+  },
+  {
+    "title": "So, Anyway...",
+    "authors": "John Cleese",
+    "coverUrl": "https://m.media-amazon.com/images/I/51sHEX0NXJL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Memoir"
+  },
+  {
+    "title": "Vijay Govindarajan on the Three Box Solution",
+    "authors": "Vijay Govindarajan",
+    "coverUrl": "https://m.media-amazon.com/images/I/41xDmbi-vAL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Business"
+  },
+  {
+    "title": "Big History",
+    "authors": "David Christian",
+    "coverUrl": "https://m.media-amazon.com/images/I/51kXsOeBJrL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "History"
+  },
+  {
+    "title": "Night School",
+    "authors": "Lee Child",
+    "coverUrl": "https://m.media-amazon.com/images/I/51EtwUReYwL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Jack Reacher",
+    "genre": "Thriller"
+  },
+  {
+    "title": "A History of Western Philosophy",
+    "authors": "Bertrand Russell",
+    "coverUrl": "https://m.media-amazon.com/images/I/61HRfKi5wfL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 2214,
+    "series": "",
+    "genre": "Philosophy"
+  },
+  {
+    "title": "The Art of Happiness",
+    "authors": "The Dalai Lama, Howard C. Cutler",
+    "coverUrl": "https://m.media-amazon.com/images/I/51LZfA8ZIpL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Philosophy"
+  },
+  {
+    "title": "The Pixar Touch",
+    "authors": "David A. Price",
+    "coverUrl": "https://m.media-amazon.com/images/I/31Xjj1R+WuL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Business"
+  },
+  {
+    "title": "Killing Floor",
+    "authors": "Lee Child",
+    "coverUrl": "https://m.media-amazon.com/images/I/51IgHu6DB7L._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Jack Reacher",
+    "genre": "Thriller"
+  },
+  {
+    "title": "The Panther",
+    "authors": "Nelson DeMille",
+    "coverUrl": "https://m.media-amazon.com/images/I/41-CSr+gcCL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "John Corey",
+    "genre": "Thriller"
+  },
+  {
+    "title": "The Experience",
+    "authors": "Bruce Loeffler, Brian Church",
+    "coverUrl": "https://m.media-amazon.com/images/I/51Fz5FUBneL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Business"
+  },
+  {
+    "title": "DisneyWar",
+    "authors": "James B. Stewart",
+    "coverUrl": "https://m.media-amazon.com/images/I/51O3yTC2N1L._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Business"
+  },
+  {
+    "title": "Walt Disney: The Triumph of the American Imagination",
+    "authors": "Neal Gabler",
+    "coverUrl": "https://m.media-amazon.com/images/I/41LuKygU-JL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Biography"
+  },
+  {
+    "title": "Star Wars: The Force Awakens",
+    "authors": "Alan Dean Foster",
+    "coverUrl": "https://m.media-amazon.com/images/I/51qzC2nTIrL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Star Wars",
+    "genre": "Science Fiction"
+  },
+  {
+    "title": "Three Jack Reacher Novellas",
+    "authors": "Lee Child",
+    "coverUrl": "https://m.media-amazon.com/images/I/51Ufql0OSkL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Jack Reacher",
+    "genre": "Thriller"
+  },
+  {
+    "title": "Harry Potter and the Half-Blood Prince",
+    "authors": "J.K. Rowling",
+    "coverUrl": "https://m.media-amazon.com/images/I/51sImF7gqML._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 55,
+    "series": "Harry Potter",
+    "genre": "Fantasy"
+  },
+  {
+    "title": "Harry Potter and the Order of the Phoenix",
+    "authors": "J.K. Rowling",
+    "coverUrl": "https://m.media-amazon.com/images/I/51KHVovUpGL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Harry Potter",
+    "genre": "Fantasy"
+  },
+  {
+    "title": "Make Me",
+    "authors": "Lee Child",
+    "coverUrl": "https://m.media-amazon.com/images/I/41s+ayKrXQL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Jack Reacher",
+    "genre": "Thriller"
+  },
+  {
+    "title": "A Brief History of Time",
+    "authors": "Stephen Hawking",
+    "coverUrl": "https://m.media-amazon.com/images/I/61+dSbZHK0L._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Science"
+  },
+  {
+    "title": "A Short History of Nearly Everything",
+    "authors": "Bill Bryson",
+    "coverUrl": "https://m.media-amazon.com/images/I/41C6x58eFwL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 316,
+    "series": "",
+    "genre": "Science"
+  },
+  {
+    "title": "Wild Fire",
+    "authors": "Nelson DeMille",
+    "coverUrl": "https://m.media-amazon.com/images/I/41KCaJfnJ3L._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "John Corey",
+    "genre": "Thriller"
+  },
+  {
+    "title": "Night Fall",
+    "authors": "Nelson DeMille",
+    "coverUrl": "https://m.media-amazon.com/images/I/414QbVHXwbL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "John Corey",
+    "genre": "Thriller"
+  },
+  {
+    "title": "The Lion's Game",
+    "authors": "Nelson DeMille",
+    "coverUrl": "https://m.media-amazon.com/images/I/5187MSQdq+L._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "John Corey",
+    "genre": "Thriller"
+  },
+  {
+    "title": "Plum Island",
+    "authors": "Nelson DeMille",
+    "coverUrl": "https://m.media-amazon.com/images/I/516GDyOFVTL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "John Corey",
+    "genre": "Thriller"
+  },
+  {
+    "title": "Personal",
+    "authors": "Lee Child",
+    "coverUrl": "https://m.media-amazon.com/images/I/51DWy-5sVLS._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Jack Reacher",
+    "genre": "Thriller"
+  },
+  {
+    "title": "Die Trying",
+    "authors": "Lee Child",
+    "coverUrl": "https://m.media-amazon.com/images/I/51mZe9fxLbL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Jack Reacher",
+    "genre": "Thriller"
+  },
+  {
+    "title": "Deception Point",
+    "authors": "Dan Brown",
+    "coverUrl": "https://m.media-amazon.com/images/I/41UNGDOwFNL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "",
+    "genre": "Thriller"
+  },
+  {
+    "title": "The Visitor",
+    "authors": "Lee Child",
+    "coverUrl": "https://m.media-amazon.com/images/I/51Rnhg3d0yL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Jack Reacher",
+    "genre": "Thriller"
+  },
+  {
+    "title": "Inferno",
+    "authors": "Dan Brown",
+    "coverUrl": "https://m.media-amazon.com/images/I/51oDA0zY6qL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Robert Langdon",
+    "genre": "Thriller"
+  },
+  {
+    "title": "Killing Floor (alt. edition)",
+    "authors": "Lee Child",
+    "coverUrl": "https://m.media-amazon.com/images/I/51XHgvkorDL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Jack Reacher",
+    "genre": "Thriller"
+  },
+  {
+    "title": "One Shot",
+    "authors": "Lee Child",
+    "coverUrl": "https://m.media-amazon.com/images/I/51O6PN4CEKL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Jack Reacher",
+    "genre": "Thriller"
+  },
+  {
+    "title": "Persuader",
+    "authors": "Lee Child",
+    "coverUrl": "https://m.media-amazon.com/images/I/413fcT+ZtTL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Jack Reacher",
+    "genre": "Thriller"
+  },
+  {
+    "title": "Echo Burning",
+    "authors": "Lee Child",
+    "coverUrl": "https://m.media-amazon.com/images/I/51N4YuVhxNS._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Jack Reacher",
+    "genre": "Thriller"
+  },
+  {
+    "title": "A Wanted Man",
+    "authors": "Lee Child",
+    "coverUrl": "https://m.media-amazon.com/images/I/51aStmD3vTL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Jack Reacher",
+    "genre": "Thriller"
+  },
+  {
+    "title": "The Affair",
+    "authors": "Lee Child",
+    "coverUrl": "https://m.media-amazon.com/images/I/51iaAb0KAWS._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Jack Reacher",
+    "genre": "Thriller"
+  },
+  {
+    "title": "Worth Dying For",
+    "authors": "Lee Child",
+    "coverUrl": "https://m.media-amazon.com/images/I/51vCbxR934L._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Jack Reacher",
+    "genre": "Thriller"
+  },
+  {
+    "title": "61 Hours",
+    "authors": "Lee Child",
+    "coverUrl": "https://m.media-amazon.com/images/I/41QGRL6g3DL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Jack Reacher",
+    "genre": "Thriller"
+  },
+  {
+    "title": "The Enemy",
+    "authors": "Lee Child",
+    "coverUrl": "https://m.media-amazon.com/images/I/416R8dKtzcS._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Jack Reacher",
+    "genre": "Thriller"
+  },
+  {
+    "title": "The Hard Way",
+    "authors": "Lee Child",
+    "coverUrl": "https://m.media-amazon.com/images/I/51VVmLjyjnS._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Jack Reacher",
+    "genre": "Thriller"
+  },
+  {
+    "title": "Fifty Shades of Grey",
+    "authors": "E L James",
+    "coverUrl": "https://m.media-amazon.com/images/I/51k48m7QAsL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Fifty Shades of Grey",
+    "genre": "Romance"
+  },
+  {
+    "title": "Tripwire",
+    "authors": "Lee Child",
+    "coverUrl": "https://m.media-amazon.com/images/I/5117EOKJELL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 601,
+    "series": "Jack Reacher",
+    "genre": "Thriller"
+  },
+  {
+    "title": "Bad Luck and Trouble",
+    "authors": "Lee Child",
+    "coverUrl": "https://m.media-amazon.com/images/I/51RdEokSFQL._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Jack Reacher",
+    "genre": "Thriller"
+  },
+  {
+    "title": "Nothing to Lose",
+    "authors": "Lee Child",
+    "coverUrl": "https://m.media-amazon.com/images/I/41rplC9xnBS._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Jack Reacher",
+    "genre": "Thriller"
+  },
+  {
+    "title": "Without Fail",
+    "authors": "Lee Child",
+    "coverUrl": "https://m.media-amazon.com/images/I/41Tw6dFtFyS._SL500_.jpg",
+    "status": "finished",
+    "minutesLeft": null,
+    "series": "Jack Reacher",
+    "genre": "Thriller"
+  },
+  {
+    "title": "Gone Tomorrow",
+    "authors": "Lee Child",
+    "coverUrl": "https://m.media-amazon.com/images/I/514TIc91RnL._SL500_.jpg",
+    "status": "in_progress",
+    "minutesLeft": 39,
+    "series": "Jack Reacher",
+    "genre": "Thriller"
+  }
+]
