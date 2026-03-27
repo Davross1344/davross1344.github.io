@@ -108,24 +108,6 @@
     "genre": "Travel"
   },
   {
-    "title": "The Great Gatsby",
-    "authors": "F. Scott Fitzgerald",
-    "coverUrl": "https://m.media-amazon.com/images/I/51Uorf8f+3L._SL500_.jpg",
-    "status": "in_progress",
-    "minutesLeft": 254,
-    "series": "",
-    "genre": "Classic Fiction"
-  },
-  {
-    "title": "The Odyssey",
-    "authors": "Homer",
-    "coverUrl": "https://m.media-amazon.com/images/I/51EHBX7wPYL._SL500_.jpg",
-    "status": "finished",
-    "minutesLeft": null,
-    "series": "",
-    "genre": "Classic Fiction"
-  },
-  {
     "title": "The Bill Bryson BBC Radio Collection",
     "authors": "Bill Bryson",
     "coverUrl": "https://m.media-amazon.com/images/I/512ntaL5B1L._SL500_.jpg",
@@ -201,8 +183,8 @@
     "title": "The DevOps Handbook",
     "authors": "Gene Kim, Jez Humble, Patrick Debois, John Willis, Nicole Forsgren",
     "coverUrl": "https://m.media-amazon.com/images/I/51-LRjBPDxL._SL500_.jpg",
-    "status": "in_progress",
-    "minutesLeft": 418,
+    "status": "finished",
+    "minutesLeft": null,
     "series": "",
     "genre": "Technology"
   },
@@ -210,8 +192,8 @@
     "title": "A Tale of Two Cities",
     "authors": "Charles Dickens",
     "coverUrl": "https://m.media-amazon.com/images/I/51LbS9LtfEL._SL500_.jpg",
-    "status": "in_progress",
-    "minutesLeft": 399,
+    "status": "finished",
+    "minutesLeft": null,
     "series": "",
     "genre": "Classic Fiction"
   },
@@ -228,8 +210,8 @@
     "title": "The Year in Tech, 2025",
     "authors": "Harvard Business Review",
     "coverUrl": "https://m.media-amazon.com/images/I/51JV1yyRoEL._SL500_.jpg",
-    "status": "in_progress",
-    "minutesLeft": 185,
+    "status": "finished",
+    "minutesLeft": null,
     "series": "",
     "genre": "Technology"
   },
@@ -237,8 +219,8 @@
     "title": "The Life and Times of the Thunderbolt Kid",
     "authors": "Bill Bryson",
     "coverUrl": "https://m.media-amazon.com/images/I/51WP2FkNNPL._SL500_.jpg",
-    "status": "in_progress",
-    "minutesLeft": 18,
+    "status": "finished",
+    "minutesLeft": null,
     "series": "",
     "genre": "Memoir"
   },
