@@ -533,7 +533,7 @@
   }
   .book-author { font-size: 0.8rem; color: var(--ink-muted); }
 
-  /* The small "Audible" badge that appears on each card */
+  /* The small status badge that appears on each card */
   .book-badge {
     display: inline-block; /* Needed so padding works properly on a <span> */
     margin-top: 0.75rem;
@@ -541,6 +541,12 @@
     padding: 0.2rem 0.6rem;
     background: var(--accent-soft); color: var(--accent);
     border-radius: 4px;
+  }
+
+  /* "Not Started" badge variant — grey tones */
+  .book-badge.not-started {
+    background: #EFEFEF;
+    color: #888;
   }
 
   /* "In Progress" badge variant — blue tones */
@@ -899,8 +905,7 @@
        ║  BOOKS SECTION                           ║
        ╚══════════════════════════════════════════╝
        Placeholder books are shown for now.
-       Once you share your Audible list, each .book-card
-       will be filled with your real titles and authors.
+       Book cards are populated from bookdata.json.
   -->
   <section id="books">
     <div class="container">
@@ -908,8 +913,7 @@
       <p class="section-label">Reading list</p>
       <h2 class="section-title reveal">Books I've read</h2>
       <p class="section-sub reveal">
-        Every book I've listened to or read — pulled from my Audible library.
-        Hover for notes, filter by genre.
+        Every book in my library — filter by genre.
       </p>
 
       <!-- Genre filter buttons — generated dynamically by JS from bookdata.json -->
@@ -1172,9 +1176,12 @@
     card.className = 'book-card';
     card.dataset.genre = book.genre;
 
-    const isInProgress = book.status === 'in_progress';
-    const badgeClass   = isInProgress ? 'book-badge in-progress' : 'book-badge';
-    const badgeLabel   = isInProgress ? '▶ In Progress' : 'Audible';
+    const badgeClass   = book.status === 'In Progress' ? 'book-badge in-progress'
+                       : book.status === 'Not Started' ? 'book-badge not-started'
+                       : 'book-badge';
+    const badgeLabel   = book.status === 'In Progress' ? '▶ In Progress'
+                       : book.status === 'Not Started' ? 'Not Started'
+                       : 'Complete';
     const seriesMeta   = book.series
       ? `<div class="book-author" style="font-style:italic;">${book.series}</div>`
       : '';
