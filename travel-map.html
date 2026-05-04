@@ -6,81 +6,112 @@
 <title>Places I've Been</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,300&family=Figtree:wght@300;400;500;600&display=swap" rel="stylesheet" />
 <style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
   :root {
-    --bg: #0d0f14;
-    --surface: #13161d;
-    --border: #1e2330;
-    --visited: #c9a96e;
-    --visited-hover: #e8c98a;
-    --unvisited: #1a1e2a;
-    --unvisited-hover: #222636;
-    --stroke: #2a3045;
-    --stroke-visited: #a07840;
-    --text-primary: #e8e0d0;
-    --text-secondary: #7a7a8a;
-    --accent: #c9a96e;
-    --tooltip-bg: #0d0f14;
+    --bg:          #F8F7F2;
+    --surface:     #FFFFFF;
+    --ink:         #1B1B2A;
+    --ink-muted:   #6B6B80;
+    --accent:      #E05C3A;
+    --accent-soft: #FDE8E1;
+    --border:      #E4E3DB;
+    --nav-h:       64px;
+    --transition:  0.22s cubic-bezier(.4,0,.2,1);
+
+    --visited:        #3DBE6A;
+    --visited-hover:  #2EA85A;
+    --unvisited:      #B8DCBF;
+    --unvisited-hover:#A6CEB0;
+    --stroke:         #9ABFA2;
+    --stroke-visited: #2A9050;
+    --ocean:          #2A7BB5;
+    --graticule:      #2470A8;
   }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
 
   html, body {
     width: 100%;
     height: 100%;
     background: var(--bg);
-    color: var(--text-primary);
-    font-family: 'DM Mono', monospace;
-    overflow: hidden;
+    color: var(--ink);
+    font-family: 'Figtree', sans-serif;
+    -webkit-font-smoothing: antialiased;
   }
 
+  a { color: inherit; text-decoration: none; }
+
+  /* ── Nav ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0;
+    height: var(--nav-h);
+    background: rgba(248,247,242,0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vw;
+    z-index: 200;
+  }
+  .nav-logo { font-family: 'Fraunces', serif; font-size: 1.4rem; font-weight: 700; }
+  .nav-logo span { color: var(--accent); }
+  .nav-links { display: flex; gap: 2rem; font-size: 0.9rem; font-weight: 500; }
+  .nav-links a { color: var(--ink-muted); transition: color var(--transition); }
+  .nav-links a:hover, .nav-links a.active { color: var(--ink); }
+
+  /* ── Layout ── */
   #app {
     display: flex;
     flex-direction: column;
     height: 100vh;
     width: 100vw;
+    padding-top: var(--nav-h);
   }
 
-  header {
-    padding: 24px 40px 16px;
+  .map-header {
+    padding: 1.25rem 5vw;
     display: flex;
     align-items: baseline;
-    gap: 20px;
+    gap: 1.25rem;
     border-bottom: 1px solid var(--border);
     flex-shrink: 0;
+    background: var(--bg);
   }
 
-  h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 28px;
-    font-weight: 400;
-    letter-spacing: 0.01em;
-    color: var(--text-primary);
+  .map-header h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--ink);
   }
 
-  h1 em {
+  .map-header h1 em {
     font-style: italic;
     color: var(--accent);
   }
 
   .meta {
-    font-size: 11px;
-    color: var(--text-secondary);
-    letter-spacing: 0.12em;
+    font-size: 0.7rem;
+    color: var(--ink-muted);
+    letter-spacing: 0.1em;
     text-transform: uppercase;
+    font-weight: 500;
   }
 
+  /* ── Map ── */
   .map-wrap {
     flex: 1;
     position: relative;
     overflow: hidden;
   }
 
-  #map {
-    width: 100%;
-    height: 100%;
-  }
+  #map { width: 100%; height: 100%; }
 
   .country {
     cursor: pointer;
@@ -90,24 +121,18 @@
   .country.visited {
     fill: var(--visited);
     stroke: var(--stroke-visited);
-    stroke-width: 0.4px;
+    stroke-width: 0.5px;
   }
-
-  .country.visited:hover {
-    fill: var(--visited-hover);
-  }
+  .country.visited:hover { fill: var(--visited-hover); }
 
   .country.unvisited {
     fill: var(--unvisited);
     stroke: var(--stroke);
     stroke-width: 0.3px;
   }
+  .country.unvisited:hover { fill: var(--unvisited-hover); }
 
-  .country.unvisited:hover {
-    fill: var(--unvisited-hover);
-  }
-
-  /* Tooltip */
+  /* ── Tooltip ── */
   #tooltip {
     position: fixed;
     pointer-events: none;
@@ -116,36 +141,32 @@
     z-index: 100;
     max-width: 260px;
   }
-
-  #tooltip.visible {
-    opacity: 1;
-  }
+  #tooltip.visible { opacity: 1; }
 
   .tt-inner {
-    background: var(--tooltip-bg);
-    border: 1px solid var(--accent);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 8px;
     padding: 14px 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
   }
 
   .tt-country {
-    font-family: 'Playfair Display', serif;
-    font-size: 15px;
+    font-family: 'Fraunces', serif;
+    font-size: 1rem;
+    font-weight: 700;
     color: var(--accent);
     margin-bottom: 8px;
-    font-weight: 700;
   }
 
   .tt-cities {
-    font-size: 11px;
-    color: var(--text-secondary);
+    font-size: 0.78rem;
+    color: var(--ink-muted);
     line-height: 1.8;
-    letter-spacing: 0.06em;
   }
 
-  .tt-city {
-    display: block;
-  }
-
+  .tt-city { display: block; }
   .tt-city::before {
     content: '—';
     margin-right: 6px;
@@ -153,7 +174,7 @@
     opacity: 0.5;
   }
 
-  /* Legend */
+  /* ── Legend ── */
   .legend {
     position: absolute;
     bottom: 24px;
@@ -161,76 +182,91 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
+    background: rgba(248,247,242,0.88);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 14px;
   }
 
   .legend-item {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 10px;
-    letter-spacing: 0.1em;
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--text-secondary);
+    font-weight: 600;
+    color: var(--ink-muted);
   }
 
   .legend-swatch {
     width: 16px;
     height: 10px;
+    border-radius: 2px;
     border: 1px solid;
   }
+  .legend-swatch.visited   { background: var(--visited);   border-color: var(--stroke-visited); }
+  .legend-swatch.unvisited { background: var(--unvisited); border-color: var(--stroke); }
 
-  .legend-swatch.visited {
-    background: var(--visited);
-    border-color: var(--stroke-visited);
-  }
-
-  .legend-swatch.unvisited {
-    background: var(--unvisited);
-    border-color: var(--stroke);
-  }
-
+  /* ── Count badge ── */
   .count-badge {
     position: absolute;
     bottom: 24px;
     right: 32px;
     text-align: right;
+    background: rgba(248,247,242,0.88);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 16px;
   }
 
   .count-number {
-    font-family: 'Playfair Display', serif;
-    font-size: 48px;
+    font-family: 'Fraunces', serif;
+    font-size: 3rem;
     color: var(--accent);
     line-height: 1;
     font-style: italic;
   }
 
   .count-label {
-    font-size: 10px;
-    letter-spacing: 0.15em;
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: var(--text-secondary);
+    font-weight: 600;
+    color: var(--ink-muted);
     margin-top: 4px;
   }
 
-  /* Graticule */
+  /* ── Map geography ── */
   .graticule {
     fill: none;
-    stroke: #1a1e28;
-    stroke-width: 0.3px;
+    stroke: var(--graticule);
+    stroke-width: 0.4px;
   }
 
-  .sphere {
-    fill: #090b10;
-  }
+  .sphere { fill: var(--ocean); }
 </style>
 </head>
 <body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">D<span>.</span>R</a>
+    <div class="nav-links">
+      <a href="index.html#about">About</a>
+      <a href="index.html#books">Books</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="manifesto.html">Manifesto</a>
+      <a href="travel-map.html" class="active">Places</a>
+    </div>
+  </nav>
+
 <div id="app">
-  <header>
+  <div class="map-header">
     <h1>Places I've <em>Been</em></h1>
     <span class="meta">Hover a highlighted country to see where</span>
-    <a href="index.html" style="margin-left:auto;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-secondary);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-secondary)'">← Back to site</a>
-  </header>
+  </div>
   <div class="map-wrap">
     <svg id="map"></svg>
     <div id="tooltip">
