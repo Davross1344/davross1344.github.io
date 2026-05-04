@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Places I've Been</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0d0f14;
+    --surface: #13161d;
+    --border: #1e2330;
+    --visited: #c9a96e;
+    --visited-hover: #e8c98a;
+    --unvisited: #1a1e2a;
+    --unvisited-hover: #222636;
+    --stroke: #2a3045;
+    --stroke-visited: #a07840;
+    --text-primary: #e8e0d0;
+    --text-secondary: #7a7a8a;
+    --accent: #c9a96e;
+    --tooltip-bg: #0d0f14;
+  }
+
+  html, body {
+    width: 100%;
+    height: 100%;
+    background: var(--bg);
+    color: var(--text-primary);
+    font-family: 'DM Mono', monospace;
+    overflow: hidden;
+  }
+
+  #app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  header {
+    padding: 24px 40px 16px;
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+    border-bottom: 1px solid var(--border);
+    flex-shrink: 0;
+  }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    color: var(--text-primary);
+  }
+
+  h1 em {
+    font-style: italic;
+    color: var(--accent);
+  }
+
+  .meta {
+    font-size: 11px;
+    color: var(--text-secondary);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .map-wrap {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #map {
+    width: 100%;
+    height: 100%;
+  }
+
+  .country {
+    cursor: pointer;
+    transition: fill 0.15s ease;
+  }
+
+  .country.visited {
+    fill: var(--visited);
+    stroke: var(--stroke-visited);
+    stroke-width: 0.4px;
+  }
+
+  .country.visited:hover {
+    fill: var(--visited-hover);
+  }
+
+  .country.unvisited {
+    fill: var(--unvisited);
+    stroke: var(--stroke);
+    stroke-width: 0.3px;
+  }
+
+  .country.unvisited:hover {
+    fill: var(--unvisited-hover);
+  }
+
+  /* Tooltip */
+  #tooltip {
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+    z-index: 100;
+    max-width: 260px;
+  }
+
+  #tooltip.visible {
+    opacity: 1;
+  }
+
+  .tt-inner {
+    background: var(--tooltip-bg);
+    border: 1px solid var(--accent);
+    padding: 14px 16px;
+  }
+
+  .tt-country {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    color: var(--accent);
+    margin-bottom: 8px;
+    font-weight: 700;
+  }
+
+  .tt-cities {
+    font-size: 11px;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+  }
+
+  .tt-city {
+    display: block;
+  }
+
+  .tt-city::before {
+    content: '—';
+    margin-right: 6px;
+    color: var(--accent);
+    opacity: 0.5;
+  }
+
+  /* Legend */
+  .legend {
+    position: absolute;
+    bottom: 24px;
+    left: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+  }
+
+  .legend-swatch {
+    width: 16px;
+    height: 10px;
+    border: 1px solid;
+  }
+
+  .legend-swatch.visited {
+    background: var(--visited);
+    border-color: var(--stroke-visited);
+  }
+
+  .legend-swatch.unvisited {
+    background: var(--unvisited);
+    border-color: var(--stroke);
+  }
+
+  .count-badge {
+    position: absolute;
+    bottom: 24px;
+    right: 32px;
+    text-align: right;
+  }
+
+  .count-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    color: var(--accent);
+    line-height: 1;
+    font-style: italic;
+  }
+
+  .count-label {
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    margin-top: 4px;
+  }
+
+  /* Graticule */
+  .graticule {
+    fill: none;
+    stroke: #1a1e28;
+    stroke-width: 0.3px;
+  }
+
+  .sphere {
+    fill: #090b10;
+  }
+</style>
+</head>
+<body>
+<div id="app">
+  <header>
+    <h1>Places I've <em>Been</em></h1>
+    <span class="meta">Hover a highlighted country to see where</span>
+    <a href="index.html" style="margin-left:auto;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-secondary);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-secondary)'">← Back to site</a>
+  </header>
+  <div class="map-wrap">
+    <svg id="map"></svg>
+    <div id="tooltip">
+      <div class="tt-inner">
+        <div class="tt-country" id="tt-name"></div>
+        <div class="tt-cities" id="tt-cities"></div>
+      </div>
+    </div>
+    <div class="legend">
+      <div class="legend-item"><div class="legend-swatch visited"></div> Visited</div>
+      <div class="legend-item"><div class="legend-swatch unvisited"></div> Not yet</div>
+    </div>
+    <div class="count-badge">
+      <div class="count-number" id="count-num">0</div>
+      <div class="count-label">countries &amp; territories</div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ─── Data ────────────────────────────────────────────────────────────────────
+const visited = {
+  // Sovereign nations (ISO 3166-1 numeric codes used by Natural Earth / TopoJSON)
+  "United States":         { iso: "840", cities: ["Florida", "New York", "Washington D.C.", "Georgia", "North Carolina", "South Carolina", "Illinois", "Colorado", "Wisconsin", "California", "Alaska", "Massachusetts", "Pennsylvania"] },
+  "England":               { iso: "ENG", cities: ["London", "Birmingham", "Bath", "Cotswolds", "Lake District", "Windsor", "Leeds", "Manchester", "Liverpool"] },
+  "Wales":                 { iso: "WLS", cities: ["Cardiff", "Swansea"] },
+  "Scotland":              { iso: "SCT", cities: ["Edinburgh"] },
+  "Northern Ireland":      { iso: "NIR", cities: ["Belfast"] },
+  "France":                { iso: "250", cities: ["Paris", "Lyon", "Marseille", "Bordeaux", "Toulouse", "Montpellier", "Strasbourg", "Colmar", "Lille"] },
+  "Germany":               { iso: "276", cities: ["Frankfurt", "Munich", "Cologne", "Schwangau", "Löf"] },
+  "Italy":                 { iso: "380", cities: ["Milan", "Venice", "Florence", "Pisa", "Rome", "Naples", "Pompeii", "Sorrento", "Capri"] },
+  "Switzerland":           { iso: "756", cities: ["Basel", "Geneva", "Grindelwald", "Eschenbach"] },
+  "Spain":                 { iso: "724", cities: ["Barcelona", "Ibiza", "Lanzarote"] },
+  "Greece":                { iso: "300", cities: ["Athens", "Corfu", "Mykonos area"] },
+  "Belgium":               { iso: "056", cities: ["Bruges", "Brussels"] },
+  "Netherlands":           { iso: "528", cities: ["Amsterdam"] },
+  "Norway":                { iso: "578", cities: ["Bergen", "Voss"] },
+  "Sweden":                { iso: "752", cities: ["Östersund", "Åre"] },
+  "Ireland":               { iso: "372", cities: ["Waterford", "Killarney", "Cork"] },
+  "Canada":                { iso: "124", cities: ["Montreal", "Vancouver", "Niagara Falls"] },
+  "Mexico":                { iso: "484", cities: ["Costa Maya", "Cabo San Lucas", "Ensenada", "Cozumel"] },
+  "Jamaica":               { iso: "388", cities: ["Falmouth"] },
+  "Bahamas":               { iso: "044", cities: ["Nassau", "Castaway Cay"] },
+  "Barbados":              { iso: "052", cities: ["Bridgetown"] },
+  "British Virgin Islands":{ iso: "092", cities: ["Road Town, Tortola"] },
+  "Cayman Islands":        { iso: "136", cities: ["Grand Cayman"] },
+  "Martinique":            { iso: "474", cities: ["Fort-de-France area"] },
+  "Turkey":                { iso: "792", cities: ["Kusadasi"] },
+  "Croatia":               { iso: "191", cities: ["Dubrovnik"] },
+  "Portugal":              { iso: "620", cities: ["Funchal, Madeira"] },
+  "Luxembourg":            { iso: "442", cities: ["Luxembourg City"] },
+  "Iceland":               { iso: "352", cities: ["Reykjavik"] },
+  "Denmark":               { iso: "208", cities: ["Denmark"] },
+  "Malta":                 { iso: "470", cities: ["Malta"] },
+  "Monaco":                { iso: "492", cities: ["Monaco"] },
+  "Isle of Man":           { iso: "833", cities: ["Isle of Man"] },
+  "Puerto Rico":           { iso: "630", cities: ["San Juan"] },
+  "US Virgin Islands":     { iso: "850", cities: ["St. Thomas"] },
+};
+
+// Build lookup by ISO numeric
+const visitedByIso = {};
+for (const [name, data] of Object.entries(visited)) {
+  visitedByIso[data.iso] = { name, cities: data.cities };
+}
+
+// UK constituent nations — we flag GB (826) and handle sub-nation display
+// TopoJSON world doesn't split UK, so we'll show all UK nations under GB
+const ukData = {
+  "826": {
+    name: "United Kingdom",
+    subNations: [
+      { name: "England", cities: ["London", "Birmingham", "Bath", "Cotswolds", "Lake District", "Windsor", "Leeds", "Manchester", "Liverpool"] },
+      { name: "Wales", cities: ["Cardiff", "Swansea"] },
+      { name: "Scotland", cities: ["Edinburgh"] },
+      { name: "Northern Ireland", cities: ["Belfast"] },
+    ]
+  }
+};
+
+// ─── Map setup ────────────────────────────────────────────────────────────────
+const svg = d3.select("#map");
+const tooltip = document.getElementById("tooltip");
+const ttName = document.getElementById("tt-name");
+const ttCities = document.getElementById("tt-cities");
+const countNum = document.getElementById("count-num");
+
+countNum.textContent = Object.keys(visited).length;
+
+function getSize() {
+  const el = document.querySelector(".map-wrap");
+  return [el.clientWidth, el.clientHeight];
+}
+
+let [W, H] = getSize();
+
+const projection = d3.geoNaturalEarth1()
+  .scale(W / 6.2)
+  .translate([W / 2, H / 2]);
+
+const path = d3.geoPath().projection(projection);
+const graticule = d3.geoGraticule();
+
+// Sphere (ocean background)
+svg.append("path")
+  .datum({type: "Sphere"})
+  .attr("class", "sphere")
+  .attr("d", path);
+
+// Graticule lines
+svg.append("path")
+  .datum(graticule())
+  .attr("class", "graticule")
+  .attr("d", path);
+
+const countryGroup = svg.append("g").attr("class", "countries");
+
+// Load world topojson
+fetch("https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json")
+  .then(r => r.json())
+  .then(world => {
+    const countries = topojson.feature(world, world.objects.countries);
+
+    countryGroup.selectAll(".country")
+      .data(countries.features)
+      .enter()
+      .append("path")
+      .attr("class", d => {
+        const id = String(d.id).padStart(3, "0");
+        const isVisited = visitedByIso[id] || ukData[id];
+        return `country ${isVisited ? "visited" : "unvisited"}`;
+      })
+      .attr("d", path)
+      .on("mousemove", function(event, d) {
+        const id = String(d.id).padStart(3, "0");
+        let data = visitedByIso[id];
+        let name, cities;
+
+        if (data) {
+          name = data.name;
+          cities = data.cities;
+        } else if (ukData[id]) {
+          // UK: show all sub-nations
+          name = "United Kingdom";
+          cities = ukData[id].subNations.flatMap(n => [`${n.name}: ${n.cities.join(", ")}`]);
+        } else {
+          return;
+        }
+
+        ttName.textContent = name;
+        ttCities.innerHTML = cities.map(c => `<span class="tt-city">${c}</span>`).join("");
+
+        positionTooltip(event);
+        tooltip.classList.add("visible");
+      })
+      .on("mouseleave", function() {
+        tooltip.classList.remove("visible");
+      });
+  });
+
+function positionTooltip(event) {
+  const pad = 16;
+  const tw = tooltip.offsetWidth || 240;
+  const th = tooltip.offsetHeight || 120;
+  let x = event.clientX + 18;
+  let y = event.clientY - 10;
+  if (x + tw > window.innerWidth - pad) x = event.clientX - tw - 18;
+  if (y + th > window.innerHeight - pad) y = window.innerHeight - th - pad;
+  tooltip.style.left = x + "px";
+  tooltip.style.top = y + "px";
+}
+
+// Resize
+window.addEventListener("resize", () => {
+  [W, H] = getSize();
+  projection.scale(W / 6.2).translate([W / 2, H / 2]);
+  svg.selectAll("path").attr("d", path);
+});
+</script>
+</body>
+</html>
