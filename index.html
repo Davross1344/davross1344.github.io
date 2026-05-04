@@ -791,8 +791,8 @@
     <div class="nav-links">
       <a href="#about">About</a>
       <a href="#books">Books</a>
-      <a href="#apps">Apps</a>
       <a href="#contact">Contact</a>
+      <a href="manifesto.html">Manifesto</a>
     </div>
 
   </nav>
@@ -858,12 +858,14 @@
     <div class="container">
       <div class="about-grid">
 
-        <!-- LEFT COLUMN: Your photo (placeholder emoji for now).
-             To add a real photo later, replace the whole <div> with:
-             <img src="your-photo.jpg" alt="Your Name" style="border-radius:12px;width:100%;" />
-             The image file should be saved in the same folder as this HTML file. -->
+        <!-- LEFT COLUMN: Profile photo.
+             Save your Instagram profile photo as "profile.jpg" in this folder to display it. -->
         <div>
-          <div class="about-avatar-placeholder">🙂</div>
+          <img src="profile.jpg"
+               alt="Dave Read"
+               style="border-radius:50%;width:180px;height:180px;object-fit:cover;display:block;margin:0 auto;"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+          <div class="about-avatar-placeholder" style="display:none;">🙂</div>
         </div>
 
         <!-- RIGHT COLUMN: Bio text.
@@ -875,15 +877,14 @@
           <!-- The <br> creates a deliberate line break in the heading for visual style -->
           <h2 class="section-title">A bit<br>about me</h2>
 
-          <!-- Replace the text in these <p> tags with your own bio.
-               We'll help pull this from your LinkedIn export! -->
           <p>
-            This is where your bio goes — we'll pull this from your LinkedIn export.
-            A few sentences about your background, what you do, and what drives you.
+           Originally from the UK, I moved to the States after falling for my beautiful wife Sarah. We spent some time living in Orlando before heading north to New York with our dog, Fox.
+<p>
+<p>
+I didn't get to do much mountain biking in the Florida flatlands, so I’m looking forward to hitting some actual hills again. I try to work out mainly because I love good food. I’m a self-taught piano player, a PC gamer, and I have a habit of over-engineering my life through home automation and a home lab. When I can get away from a screen, I’m usually exploring, learning something new, or out in the cold with my camera. My favorite time of year is winter—you can credit Santa or skis, both are valid.
           </p>
           <p>
-            Add a second paragraph here with a bit more personality — hobbies,
-            what you're currently reading, what you're building.
+            
           </p>
 
           <!-- Update these tags with your real city, role, and interests.
@@ -930,60 +931,6 @@
   </section>
 
 
-  <!-- ╔══════════════════════════════════════════╗
-       ║  APPS SECTION                            ║
-       ╚══════════════════════════════════════════╝
-       Showcases mini interactive apps built into the site.
-       Connect Four is planned as the first one.
-  -->
-  <section id="apps">
-    <div class="container">
-
-      <p class="section-label">Interactive apps</p>
-      <h2 class="section-title reveal">Things I built</h2>
-      <p class="section-sub reveal">
-        Small interactive projects I've put together — playable right here in the browser.
-      </p>
-
-      <div class="apps-grid">
-
-        <!-- APP CARD 1: Connect Four
-             The .c4 class on .app-preview gives it a warm coral gradient (see CSS).
-             When the game is built, we'll wrap this card in an <a href="connect-four.html">
-             or add an onClick to open it. -->
-        <div class="app-card reveal">
-          <div class="app-preview c4">🟡🔴</div>
-          <div class="app-body">
-            <h3>Connect Four</h3>
-            <p>Classic two-player strategy game. Drop your discs, block your opponent, get four in a row.</p>
-            <!-- Change "coming" to "live" (and update the text) once the app is built -->
-            <span class="app-status coming">Coming soon</span>
-          </div>
-        </div>
-
-        <!-- APP CARD 2: Placeholder for your next idea -->
-        <div class="app-card reveal">
-          <div class="app-preview tbd1">✨</div>
-          <div class="app-body">
-            <h3>App Slot #2</h3>
-            <p>Another fun project will live here. What are you thinking of building next?</p>
-            <span class="app-status coming">Planned</span>
-          </div>
-        </div>
-
-        <!-- APP CARD 3: Another placeholder -->
-        <div class="app-card reveal">
-          <div class="app-preview tbd2">🌱</div>
-          <div class="app-body">
-            <h3>App Slot #3</h3>
-            <p>More ideas are always welcome. The sky's the limit.</p>
-            <span class="app-status coming">Planned</span>
-          </div>
-        </div>
-
-      </div><!-- end .apps-grid -->
-    </div>
-  </section>
 
 
   <!-- ╔══════════════════════════════════════════╗
@@ -1003,22 +950,8 @@
 
       <div class="contact-links reveal">
 
-        <!-- LinkedIn link.
-             Replace "yourprofile" with your actual LinkedIn username.
-             target="_blank" = opens in a new browser tab so the visitor doesn't leave your site. -->
-        <a href="https://linkedin.com/in/yourprofile" target="_blank" class="contact-link">
-          💼 LinkedIn
-        </a>
-
-        <!-- GitHub link. Replace "yourusername" with your actual GitHub username. -->
-        <a href="https://github.com/yourusername" target="_blank" class="contact-link">
-          🐙 GitHub
-        </a>
-
-        <!-- Email link.
-             The "mailto:" prefix opens the visitor's email app with a new message to you. -->
-        <a href="/cdn-cgi/l/email-protection#235a4c565163464e424a4f0d404c4e" class="contact-link">
-          ✉️ Email
+        <a href="https://instagram.com/edaveread" target="_blank" class="contact-link">
+          📸 @edaveread
         </a>
 
       </div>
@@ -1036,12 +969,11 @@
        &amp;  = the & character (written as &amp; in HTML to avoid confusion with tag syntax)
   -->
   <footer>
-    <span>&copy; 2026 Your Name</span>
-    <span>Built with ❤️ &amp; GitHub Pages</span>
+    <span>&copy; 2026 Dave Read</span>
   </footer>
 
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  <script>
   /*
     ╔══════════════════════════════════════════════════════════════════╗
     ║  JAVASCRIPT                                                      ║
@@ -1166,9 +1098,11 @@
 
   // ── Helpers ────────────────────────────────────────────────────────
 
+  const statusOrder = { 'In Progress': 0, 'Complete': 1, 'Not Started': 2 };
+
   function filteredBooks() {
-    if (activeGenre === 'All') return allBooks;
-    return allBooks.filter(b => b.genre === activeGenre);
+    const books = activeGenre === 'All' ? allBooks : allBooks.filter(b => b.genre === activeGenre);
+    return [...books].sort((a, b) => (statusOrder[a.status] ?? 1) - (statusOrder[b.status] ?? 1));
   }
 
   function makeCard(book) {
